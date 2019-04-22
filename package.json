@@ -1,0 +1,37 @@
+{
+  "name": "node-image-proxy",
+  "version": "0.9.1",
+  "description": "Resizing and converting image proxy",
+  "keywords": [
+    "image",
+    "proxy",
+    "resize",
+    "convert"
+  ],
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc Jacobs <marcjacobs1021@gmail.com> (https://github.com/marcjacobs1021/)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.428.0",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "got": "^9.6.0",
+    "http-errors": "^1.7.2",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3",
+    "redis": "^2.8.0",
+    "sharp": "^0.22.0",
+    "shelljs": "^0.8.3",
+    "shorthash": "0.0.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^24.5.0"
+  }
+}
