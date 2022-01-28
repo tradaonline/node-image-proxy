@@ -5,7 +5,7 @@ const router = express.Router();
 const moment = require('moment');
 const url = require('url');
 const shorthash = require('shorthash');
-const uuid = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 const got = require('got');
 const sharp = require('sharp');
 const debug = require('debug')('complex:route');
@@ -96,7 +96,7 @@ router.get('/:uri(*)', (req, res) => {
 
     let imageBody = (await got(uri, { encoding: null })).body;
 
-    let newFilename = `${uuid()}.${contentType.substring(contentType.indexOf('/')+1)}`;
+    let newFilename = `${uuidv4()}.${contentType.substring(contentType.indexOf('/')+1)}`;
 
     debug('make Thumbnail');
 
